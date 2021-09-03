@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'storybook-button',
+  selector: 'storybook-button, button[foo], .button[foo], button[baz]',
   template: ` <button
     type="button"
     (click)="onClick.emit($event)"
